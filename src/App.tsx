@@ -8,7 +8,9 @@ import NotFound from "./pages/NotFound";
 // import AllProductsPage from "./pages/ProductsPage";
 import AllProductsPage from "./pages/ProductsPage";
 import ScrollToTop from "./components/ScrollToTop";
-
+import AboutPage from "./pages/AboutPage";
+import QualityPage from "./pages/QualityPage";
+import ContactPage from "./pages/ContactPage";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -21,6 +23,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/products" element={<AllProductsPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/quality" element={<QualityPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
