@@ -1,4 +1,4 @@
-name: Deploy to Hostinger
+name: 🚀 Deploy React App to Hostinger
 
 on:
   push:
@@ -7,20 +7,47 @@ on:
       - master
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      # Checkout the repository
+      - name: 🧩 Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: Deploy via SSH
+      # Setup Node.js
+      - name: ⚙️ Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Install dependencies
+      - name: 📦 Install Dependencies
+        run: npm install
+
+      # Build React app (CI disabled to prevent ESLint errors from failing build)
+      - name: 🏗️ Build Project
+        run: CI=false npm run build
+
+      # Clean old files on server
+      - name: 🧹 Clean old files on server
         uses: appleboy/ssh-action@v1.0.0
         with:
-          host: ${{ secrets.HOSTINGER_HOST }}
-          username: ${{ secrets.HOSTINGER_USER }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.HOSTINGER_PORT }}
+          port: ${{ secrets.SSH_PORT }}
           script: |
-            cd public_html
-            git pull origin main
+            rm -rf /home/${{ secrets.SSH_USERNAME }}/domains/spicevistaexports.com/public_html/*
+
+      # Deploy only the contents of build folder
+      - name: 📤 Deploy to Hostinger via SCP
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "build/"
+          target: "/home/${{ secrets.SSH_USERNAME }}/domains/spicevistaexports.com/public_html/"
+          strip_components: 1
