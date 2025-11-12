@@ -48,6 +48,6 @@ jobs:
           username: ${{ secrets.HOSTINGER_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
-          source: "build/"
+          source: "dist/"
           target: "/home/${{ secrets.HOSTINGER_USER }}/domains/spicevistaexports.com/public_html/"
           strip_components: 1
