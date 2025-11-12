@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Home", path: "/" },
+    { label: "Homee", path: "/" },
     { label: "About", path: "/about" },
     { label: "Products", path: "/products" },
     { label: "Quality", path: "/quality" },
