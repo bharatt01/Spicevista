@@ -10,7 +10,9 @@ import AllProductsPage from "./pages/ProductsPage";
 import ScrollToTop from "./components/ScrollToTop";
 import AboutPage from "./pages/AboutPage";
 import QualityPage from "./pages/QualityPage";
+import GlobalReachPage from "./pages/GlobalReach";
 import ContactPage from "./pages/ContactPage";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -26,6 +28,7 @@ const App = () => (
           <Route path="/about" element={<AboutPage />} />
           <Route path="/quality" element={<QualityPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/global" element={<GlobalReachPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,20 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-spices.jpg";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const navigate = useNavigate();
+
+  const handleNavigateProducts = () => {
+    navigate("/products"); // route to products page
   };
 
-  const scrollToProducts = () => {
-    const element = document.getElementById("products");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleNavigateContact = () => {
+    navigate("/contact"); // route to contact page
   };
 
   return (
@@ -35,21 +32,21 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 z-10 py-20">
-        <div className="max-w-3xl animate-fade-in-up">
+      <div className="container mx-auto px-4 z-20 relative py-20">
+        <div className="max-w-3xl animate-fade-in-up pointer-events-auto">
           <div className="inline-flex items-center gap-2 bg-accent/20 text-accent-foreground px-4 py-2 rounded-full mb-6 border border-accent/30">
             <Sparkles className="h-4 w-4" />
             <span className="text-sm font-medium">30+ Years of Excellence</span>
           </div>
-          
+
           <h1 className="font-playfair text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
             From Delhi's Heart to the World
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 font-light">
             Exporting the Essence of India
           </p>
-          
+
           <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl">
             For over three decades, SpiceVista Exports has been a trusted name in
             authentic Indian spices. Now bringing that legacy to global kitchens in
@@ -59,7 +56,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               size="lg"
-              onClick={scrollToProducts}
+              onClick={handleNavigateProducts}
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-elegant text-lg px-8"
             >
               Explore Our Range
@@ -68,8 +65,8 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              onClick={scrollToContact}
-              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-secondary text-lg px-8"
+              onClick={handleNavigateContact}
+              className="border-2 border-primary-foreground text-orange-500 hover:bg-primary-foreground hover:text-secondary text-lg px-8"
             >
               Partner with Us
             </Button>
