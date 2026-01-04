@@ -9,9 +9,9 @@ const ContactPage = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const contactDetails = [
-    { icon: Phone, title: "Phone", text: "+91 98765 43210" },
-    { icon: Mail, title: "Email", text: "contact@spicevista.com" },
-    { icon: MapPin, title: "Address", text: "Khari Baoli, Delhi – 110006, India" },
+    { icon: Phone, title: "Phone", text: "+91 9899809777" },
+    { icon: Mail, title: "Email", text: "spicevistaexports@gmail.com" },
+    { icon: MapPin, title: "Address", text: "142/17 Faridabad, Haryana (121002)" },
     { icon: Clock, title: "Business Hours", text: "Mon – Sat: 9:00 AM – 6:00 PM" },
   ];
 

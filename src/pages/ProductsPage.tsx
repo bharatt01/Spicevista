@@ -9,21 +9,21 @@ import Header from "@/components/Header";
 
 // Product list (images optional)
 const products = [
-  { name: "Turmeric Powder (Haldi)", image: "", description: "Bright golden spice known for its earthy flavor and health benefits." },
-  { name: "Cumin Seeds (Jeera)", image: "", description: "Aromatic spice with a warm, nutty flavor used in Indian curries and snacks." },
-  { name: "Coriander Powder (Dhaniya)", image: "", description: "Mild, citrusy spice that adds depth to both vegetarian and non-veg dishes." },
-  { name: "Red Chili Powder (Lal Mirch)", image: "", description: "Adds rich color and fiery heat to all kinds of Indian recipes." },
-  { name: "Garam Masala", image: "", description: "A flavorful blend of ground spices that enhances every Indian curry." },
-  { name: "Cardamom (Elaichi)", image: "", description: "Sweet and aromatic pods used in desserts, teas, and spice blends." },
-  { name: "Cinnamon (Dalchini)", image: "", description: "Warm, woody spice used in both savory dishes and sweet treats." },
-  { name: "Black Pepper (Kali Mirch)", image: "", description: "The 'King of Spices' with sharp, bold flavor and medicinal properties." },
-  { name: "Cloves (Laung)", image: "", description: "Strong, aromatic spice that adds intensity to curries and biryanis." },
-  { name: "Fennel Seeds (Saunf)", image: "", description: "Sweet, cooling spice used in cooking and as a mouth freshener." },
-  { name: "Fenugreek Seeds (Methi)", image: "", description: "Slightly bitter spice used for pickles, curries, and digestion benefits." },
-  { name: "Mustard Seeds (Sarson)", image: "", description: "Essential Indian spice that adds pungent aroma and tangy flavor." },
-  { name: "Nutmeg (Jaiphal)", image: "", description: "A warm spice that adds depth to desserts, curries, and spice blends." },
-  { name: "Saffron (Kesar)", image: "", description: "World’s most precious spice, known for its aroma, flavor, and golden hue." },
-  { name: "Bay Leaf (Tej Patta)", image: "", description: "Fragrant leaf used in curries and rice dishes for rich aroma." },
+  { name: "Turmeric Powder (Haldi)", image: "/images/haldi.jpg", description: "Bright golden spice known for its earthy flavor and health benefits." },
+  { name: "Cumin Seeds (Jeera)", image: "/images/jeera.jpg", description: "Aromatic spice with a warm, nutty flavor used in Indian curries and snacks." },
+  { name: "Coriander Powder (Dhaniya)", image: "/images/dhaniya.jpg", description: "Mild, citrusy spice that adds depth to both vegetarian and non-veg dishes." },
+  { name: "Red Chili Powder (Lal Mirch)", image: "/images/lal-mirch.jpg", description: "Adds rich color and fiery heat to all kinds of Indian recipes." },
+  { name: "Garam Masala", image: "/images/garam-masala.jpg", description: "A flavorful blend of ground spices that enhances every Indian curry." },
+  { name: "Cardamom (Elaichi)", image: "/images/elaichi.jpg", description: "Sweet and aromatic pods used in desserts, teas, and spice blends." },
+  { name: "Cinnamon (Dalchini)", image: "/images/dal-chini.jpg", description: "Warm, woody spice used in both savory dishes and sweet treats." },
+  { name: "Black Pepper (Kali Mirch)", image: "/images/kali-mirch.jpg", description: "The 'King of Spices' with sharp, bold flavor and medicinal properties." },
+  { name: "Cloves (Laung)", image: "/images/laung.jpg", description: "Strong, aromatic spice that adds intensity to curries and biryanis." },
+  { name: "Fennel Seeds (Saunf)", image: "/images/saunf.jpg", description: "Sweet, cooling spice used in cooking and as a mouth freshener." },
+  { name: "Fenugreek Seeds (Methi)", image: "/images/methi.jpg", description: "Slightly bitter spice used for pickles, curries, and digestion benefits." },
+  { name: "Mustard Seeds (Sarson)", image: "/images/sarson.jpg", description: "Essential Indian spice that adds pungent aroma and tangy flavor." },
+  { name: "Nutmeg (Jaiphal)", image: "/images/jaiphal.jpg", description: "A warm spice that adds depth to desserts, curries, and spice blends." },
+  { name: "Saffron (Kesar)", image: "/images/kesar.jpg", description: "World’s most precious spice, known for its aroma, flavor, and golden hue." },
+  { name: "Bay Leaf (Tej Patta)", image: "/images/tej-patta.jpg", description: "Fragrant leaf used in curries and rice dishes for rich aroma." },
 ];
 
 const AllProductsPage: FC = () => {
