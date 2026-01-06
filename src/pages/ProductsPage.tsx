@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search } from "lucide-react"; // add at the top near other imports
-
+import LazyImage from "@/components/LazyImage";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Footer from "@/components/Footer";
@@ -89,7 +89,7 @@ const AllProductsPage: FC = () => {
                 >
                   {/* Image with fallback */}
                   {item.image ? (
-                    <img
+                    <LazyImage
                       src={item.image}
                       alt={item.name}
                       className="h-56 w-full object-cover"
