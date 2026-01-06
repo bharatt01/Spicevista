@@ -6,24 +6,39 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import haldi from "@/assets/haldi.jpg";
+import jeera from "@/assets/jeera.jpg";
+import dhaniya from "@/assets/dhaniya.jpg";
+import lalMirch from "@/assets/lal-mirch.jpg";
+import garamMasala from "@/assets/garam-masala.jpg";
+import elaichi from "@/assets/elaichi.jpg";
+import dalChini from "@/assets/dal-chini.jpg";
+import kaliMirch from "@/assets/kali-mirch.jpg";
+import laung from "@/assets/laung.jpg";
+import saunf from "@/assets/saunf.jpg";
+import methi from "@/assets/methi.jpg";
+import sarson from "@/assets/sarson.jpg";
+import jaiphal from "@/assets/jaiphal.jpg";
+import kesar from "@/assets/kesar.jpg";
+import tejPatta from "@/assets/tej-patta.jpg";
 
 // Product list (images optional)
 const products = [
-  { name: "Turmeric Powder (Haldi)", image: "/src/assets/haldi.jpg", description: "Bright golden spice known for its earthy flavor and health benefits." },
-  { name: "Cumin Seeds (Jeera)", image: "/src/assets/jeera.jpg", description: "Aromatic spice with a warm, nutty flavor used in Indian curries and snacks." },
-  { name: "Coriander Powder (Dhaniya)", image: "/src/assets/dhaniya.jpg", description: "Mild, citrusy spice that adds depth to both vegetarian and non-veg dishes." },
-  { name: "Red Chili Powder (Lal Mirch)", image: "/src/assets/lal-mirch.jpg", description: "Adds rich color and fiery heat to all kinds of Indian recipes." },
-  { name: "Garam Masala", image: "/src/assets/garam-masala.jpg", description: "A flavorful blend of ground spices that enhances every Indian curry." },
-  { name: "Cardamom (Elaichi)", image: "/src/assets/elaichi.jpg", description: "Sweet and aromatic pods used in desserts, teas, and spice blends." },
-  { name: "Cinnamon (Dalchini)", image: "/src/assets/dal-chini.jpg", description: "Warm, woody spice used in both savory dishes and sweet treats." },
-  { name: "Black Pepper (Kali Mirch)", image: "/src/assets/kali-mirch.jpg", description: "The 'King of Spices' with sharp, bold flavor and medicinal properties." },
-  { name: "Cloves (Laung)", image: "/src/assets/laung.jpg", description: "Strong, aromatic spice that adds intensity to curries and biryanis." },
-  { name: "Fennel Seeds (Saunf)", image: "/src/assets/saunf.jpg", description: "Sweet, cooling spice used in cooking and as a mouth freshener." },
-  { name: "Fenugreek Seeds (Methi)", image: "/src/assets/methi.jpg", description: "Slightly bitter spice used for pickles, curries, and digestion benefits." },
-  { name: "Mustard Seeds (Sarson)", image: "/src/assets/sarson.jpg", description: "Essential Indian spice that adds pungent aroma and tangy flavor." },
-  { name: "Nutmeg (Jaiphal)", image: "/src/assets/jaiphal.jpg", description: "A warm spice that adds depth to desserts, curries, and spice blends." },
-  { name: "Saffron (Kesar)", image: "/src/assets/kesar.jpg", description: "World’s most precious spice, known for its aroma, flavor, and golden hue." },
-  { name: "Bay Leaf (Tej Patta)", image: "/src/assets/tej-patta.jpg", description: "Fragrant leaf used in curries and rice dishes for rich aroma." },
+  { name: "Turmeric Powder (Haldi)", image: haldi, description: "Bright golden spice known for its earthy flavor and health benefits." },
+  { name: "Cumin Seeds (Jeera)", image: jeera, description: "Aromatic spice with a warm, nutty flavor used in Indian curries and snacks." },
+  { name: "Coriander Powder (Dhaniya)", image: dhaniya, description: "Mild, citrusy spice that adds depth to both vegetarian and non-veg dishes." },
+  { name: "Red Chili Powder (Lal Mirch)", image: lalMirch, description: "Adds rich color and fiery heat to all kinds of Indian recipes." },
+  { name: "Garam Masala", image: garamMasala, description: "A flavorful blend of ground spices that enhances every Indian curry." },
+  { name: "Cardamom (Elaichi)", image: elaichi, description: "Sweet and aromatic pods used in desserts, teas, and spice blends." },
+  { name: "Cinnamon (Dalchini)", image: dalChini, description: "Warm, woody spice used in both savory dishes and sweet treats." },
+  { name: "Black Pepper (Kali Mirch)", image: kaliMirch, description: "The 'King of Spices' with sharp, bold flavor and medicinal properties." },
+  { name: "Cloves (Laung)", image: laung, description: "Strong, aromatic spice that adds intensity to curries and biryanis." },
+  { name: "Fennel Seeds (Saunf)", image: saunf, description: "Sweet, cooling spice used in cooking and as a mouth freshener." },
+  { name: "Fenugreek Seeds (Methi)", image: methi, description: "Slightly bitter spice used for pickles, curries, and digestion benefits." },
+  { name: "Mustard Seeds (Sarson)", image: sarson, description: "Essential Indian spice that adds pungent aroma and tangy flavor." },
+  { name: "Nutmeg (Jaiphal)", image: jaiphal, description: "A warm spice that adds depth to desserts, curries, and spice blends." },
+  { name: "Saffron (Kesar)", image: kesar, description: "World’s most precious spice, known for its aroma, flavor, and golden hue." },
+  { name: "Bay Leaf (Tej Patta)", image: tejPatta, description: "Fragrant leaf used in curries and rice dishes for rich aroma." },
 ];
 
 const AllProductsPage: FC = () => {
@@ -41,7 +56,7 @@ const AllProductsPage: FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <h1 className="font-playfair text-5xl font-bold text-foreground mb-4">
-              All Our Masalass
+              All Our Masalas
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
               Explore the complete range of our authentic Indian spices — pure, aromatic, and packed with tradition.
