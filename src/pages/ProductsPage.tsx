@@ -107,9 +107,7 @@ const AllProductsPage: FC = () => {
                     <p className="text-muted-foreground mb-5">
                       {item.description}
                     </p>
-                    <Button className="w-full bg-primary text-white hover:bg-primary/90 transition-all">
-                      View Details
-                    </Button>
+                   
                   </CardContent>
                 </Card>
               ))}
