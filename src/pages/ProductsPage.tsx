@@ -41,7 +41,7 @@ const AllProductsPage: FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <h1 className="font-playfair text-5xl font-bold text-foreground mb-4">
-              All Our Masalas
+              All Our Masalass
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
               Explore the complete range of our authentic Indian spices — pure, aromatic, and packed with tradition.
